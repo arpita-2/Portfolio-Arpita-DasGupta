@@ -44,5 +44,80 @@ body {
 }
 
 .navigation a:hover {
-    color: #0ef;
+    color: #9461fd;
+}
+
+
+.home {
+   position: relative; 
+   width: 100%;
+   justify-content: space-between;
+   height: 100vh;
+   background: url(img/black.jpg)no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   padding: 70px 10% 0;
+
+}
+
+.home-content {
+    max-width: 600px;
+
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.home-content h1 
+{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p{
+    font-size: 20px;
+}
+
+.home-section a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #9461fd;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #9461fd;
+    text-decoration: none;
+    margin: 30px 10px 30px 0;
+}
+
+.home-section a:hover {
+    background: #9461fd;
+    color: #27063E;
+    box-shadow: 0 0 20px #9461fd;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #9461fd;
+    border-radius: 40px;
+    font-size: 16px;
+    color:#27063E;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover {
+box-shadow: 0 0 5px #9461fd,
+0 0 25px #9461fd, 0 0 50px #9461fd,
+0 0 100px #9461fd, 0 0 200px #9461fd
 }
