@@ -8,17 +8,20 @@
     <!------linked css-->
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    
+
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
 
         <nav class="navigation">
-            <a href="#" >Home</a> 
-            <a href="#" >About</a> 
-            <a href="#" >Skill</a> 
-            <a href="#" >Project</a> 
-            <a href="#" >Contact</a>   
+            <a href="#" style="--i:1" class="active">Home</a> 
+            <a href="#" style="--i:2">About</a> 
+            <a href="#" style="--i:3">Skill</a> 
+            <a href="#" style="--i:4">Project</a> 
+            <a href="#" style="--i:5">Contact</a>   
         </nav>
 
     </header>
@@ -27,29 +30,49 @@
         <div class="home-content">
             <h3>Hello, it's me</h3>
             <h1>Arpita Das Gupta</h1>
+            <!--to animate tetx-->
             <h3>And I am a <span class="text"></span></h3>
             <p>Skilled and creative professional, specializing in both frontend web development 
             and UI/UX design. 
             <br>With a passion for crafting seamless and visually appealing user experiences, 
             I bring together my technical expertise and artistic flair to build captivating websites and user 
-            interfaces. With a strong command over HTML, CSS, and JavaScript, I transform ideas and designs 
+            interfaces. <!--With a strong command over HTML, CSS, and JavaScript, I transform ideas and designs 
             into fully functional, responsive, and user-friendly digital products. I constantly strive to stay
             updated with the latest industry trends and technologies, ensuring that my work is at the forefront of innovation. 
-            My ultimate goal is to create aesthetically pleasing and intuitive interfaces that delight users and elevate their online interactions.
+            My ultimate goal is to create aesthetically pleasing and intuitive interfaces that delight users and elevate their online interactions.-->
         </p>
 
         <div class="home-section">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-whatsapp'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#" style="--i:6"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#" style="--i:7"><i class='bx bxl-instagram'></i></a>
+            <a href="#" style="--i:8"><i class='bx bxl-twitter'></i></a>
+            <a href="#" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#" style="--i:10"><i class='bx bxl-github'></i></a>
         </div>
         <a href="#" class="btn-box">More About Me</a>
         
     </div>
     </section>
 
+
+    <section class="about" id="about">
+       <div class="about-img">
+        <img src="img/undraw_Woman_ffrd (1).png">
+       </div>
+       <div class="about-text">
+        <h2>About<span>Me</span></h2>
+        <h4>Frontend Developer</h4>
+        <p>I am a proficient frontend developer with expertise in HTML, CSS, and JavaScript. 
+            My passion for creating captivating user interfaces drives me to continually explore the latest web development trends and techniques. Concurrently, I am pursuing a Master's in Computer Applications (MCA), where I aim to deepen my understanding of software development and its diverse applications.
+        With a strong foundation in frontend technologies and a thirst for knowledge, I am poised to make a significant impact in the world of web development and beyond.
+
+        </p>
+        <a href="#" class="btn-box">More About Me</a>
+
+       </div>
+
+    </section>
+    
     <script src="app.js"></script>
     
 </body>
