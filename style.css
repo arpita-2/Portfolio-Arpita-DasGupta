@@ -8,6 +8,7 @@
 
 body {
     color: #ededed;
+    background: url(img/black.jpg);
 
 }
 
@@ -17,7 +18,7 @@ body {
     left: 0;
     width: 100% ;
     padding: 20px 10% ;
-    background: transparent;
+    background: #1a0033;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +59,7 @@ body {
  transition: 0.3s;
  opacity: 0;
  animation: slideTop 0.5s ease forwards;
+ animation-delay: calc(0.2s * var(--i));
 }
 
 
@@ -83,8 +85,6 @@ body {
    width: 100%;
    justify-content: space-between;
    height: 100vh;
-   background: url(img/black.jpg)no-repeat;
-   background-size: cover;
    background-position: center;
    display: flex;
    align-items: center;
@@ -198,4 +198,47 @@ body {
 box-shadow: 0 0 5px #9461fd,
 0 0 25px #9461fd, 0 0 50px #9461fd,
 0 0 100px #9461fd, 0 0 200px #9461fd
+}
+
+
+
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 400px;
+    border-radius: 100%;
+    margin-top: 60px;
+}
+.about-text h2 {
+    font-size: 60px;
+}
+
+.about-text h2 span {
+    color: #9461fd;
+}
+
+.about-text h4 {
+    font-size: 29px;
+    font-size: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p{
+    color:aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+
 }
