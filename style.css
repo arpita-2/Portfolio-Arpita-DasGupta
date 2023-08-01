@@ -242,3 +242,93 @@ box-shadow: 0 0 5px #9461fd,
     margin-bottom: 4rem;
 
 }
+
+.container {
+    padding: 90px;
+}
+
+
+
+#services {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.sub-title span{
+    color: #9461fd;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.service-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition:background 0.5s, transform 0.5s ;
+    box-shadow: 1px 1px 20px #27063E,
+                1px 1px 40px #3d0066
+}
+
+.service-list div i{
+ font-size: 50px;
+ margin-bottom: 30px;
+}
+
+
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.service-list div a{
+    text-decoration: none;
+    color:#3d0066;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #9461fd;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #27063E;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 600;
+    opacity:0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #9461fd,
+0 0 25px #9461fd, 0 0 50px #9461fd
+
+}
+
+.read:hover{
+    background: #9461fd;
+    color: #27063E;
+    box-shadow: 0 0 20px #9461fd;
+}
+.service-list div:hover{
+    transform: translateY(-10px);
+}
