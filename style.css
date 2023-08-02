@@ -332,3 +332,230 @@ box-shadow: 0 0 5px #9461fd,
 .service-list div:hover{
     transform: translateY(-10px);
 }
+/*
+section {
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+.container1 {
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+.heading1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar {
+    font-size: 23px;
+}
+
+.Technical-bars .bar{
+     margin-top: 40px 0;
+}
+
+.Technical-bars .bar:first-child{
+    margin-top: 0;
+}
+
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+
+.Technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+
+.Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 100%;
+    
+}
+
+.Technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    
+}
+
+@keyframes animate{
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #9461fd;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span{
+    width: 90%;
+}
+
+.progress-line.css span{
+    width: 90%;
+}
+
+.progress-line.javascript span{
+    width: 90%;
+}
+
+.progress-line.react span{
+    width: 90%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+
+.progress-line.html span::after{
+    content: 90%;
+}
+.progress-line.css span::after{
+    content: 90%;
+}
+.progress-line.javascript span::after{
+    content: 90%;
+}
+.progress-line.bootstrap span::after{
+    content: 90%;
+}
+.progress-line.reactjs span::after{
+    content: 90%;
+}
+.progress-line.uidesign span::after{
+    content: 90%;
+}
+
+.progress-line span::before{
+    content:"";
+}
+
+.portfolio {
+    padding: 50px 0;
+
+}
+
+/*---------------------My Projects----------------------------------------------*/
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #732673);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color:#9461fd;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background: #1a0033;
+}
+
+.work:hover img{
+  transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.see-more {
+    display:block;
+    margin: 50px auto;
+    width: fit-content;
+    
+    /*padding: 14px 15px;*/
+    border-radius: 6px;
+    /*display: inline-block;*/
+    padding: 12px 28px;
+    background: #9461fd;
+    border-radius: 40px;
+    font-size: 16px;
+    color:#27063E;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px  #9461fd;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+.see-more:hover {
+box-shadow: 0 0 5px #9461fd,
+0 0 25px #9461fd, 0 0 50px #9461fd,
+0 0 100px #9461fd, 0 0 200px #9461fd
+}
